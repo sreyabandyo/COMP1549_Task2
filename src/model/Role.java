@@ -1,3 +1,5 @@
+// Sreya Bandyopadhyay
+
 package model;
 
 // Represents the role of a user in the system.

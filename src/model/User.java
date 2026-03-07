@@ -1,3 +1,5 @@
+// Sreya Bandyopadhyay
+
 package model;
 
 // Represents a user with an ID and a role.

@@ -1,3 +1,5 @@
+// Sreya Bandyopadhyay
+
 package model;
 
 public class Resource {
