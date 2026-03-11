@@ -9,15 +9,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-// Records all access attempts (allowed or refused) to resources.
-// Called by AccessPolicy after every allow/deny decision.
+//
 
 public class AccessLog {
 
     private final List<LogEntry> entries = new ArrayList<>();
 
-    // Log an access attempt.
-    // Called by Ruhina's AccessPolicy with the result of each access check.
+    // 
     public void log(String userId, Role role, Resource resource,
                     String operation, boolean allowed) {
 
@@ -31,20 +29,20 @@ public class AccessLog {
                 result
         );
         entries.add(entry);
-        System.out.println(entry); // prints to console as required
+        System.out.println(entry);
     }
 
-    // Returns an unmodifiable view of all log entries (used in JUnit tests).
+    // Returns unmodifiable view of all log entries 
     public List<LogEntry> getEntries() {
         return Collections.unmodifiableList(entries);
     }
 
-    // Clears all log entries (useful for test setup).
+    // Clears all log entries
     public void clear() {
         entries.clear();
     }
 
-    // Prints all log entries to console.
+    // Prints all log entries
     public void printAll() {
         if (entries.isEmpty()) {
             System.out.println("No log entries.");
