@@ -4,7 +4,6 @@ package logging;
 
 import model.Role;
 import model.Resource;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -32,7 +31,7 @@ public class AccessLog {
         System.out.println(entry);
     }
 
-    // Returns unmodifiable view of all log entries 
+    // Returns unmodifiable log entries 
     public List<LogEntry> getEntries() {
         return Collections.unmodifiableList(entries);
     }
