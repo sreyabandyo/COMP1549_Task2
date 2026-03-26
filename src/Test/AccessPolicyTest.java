@@ -1,6 +1,6 @@
 // Riyah Hussain Task2 Testing
 
-package test;
+package Test;
 
 import model.User;
 import model.Role;
