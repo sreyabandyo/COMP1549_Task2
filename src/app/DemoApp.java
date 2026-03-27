@@ -25,7 +25,7 @@ public class DemoApp {
         Capability<Read> readCap = new Capability<>();
         Capability<Write> writeCap = new Capability<>();
 
-        System.out.println("=== Access Control Demo ===");
+        System.out.println(" Access Control Demo ");
 
         
         //Guest reads public - ALLOW
@@ -44,7 +44,7 @@ public class DemoApp {
         runDemo(policy, log, admin, examPaper, Operation.WRITE);
 
        
-        System.out.println("\n=== TYPED CAPABILITY DEMO ===\n");
+        System.out.println("\nTYPED CAPABILITY DEMO\n");
 
         System.out.println("Using Capability<Read> on Lecture Notes:");
 
@@ -54,7 +54,7 @@ public class DemoApp {
 
         examPaper.write(writeCap);
 
-        System.out.println("\n=== ACCESS LOG ===\n");
+        System.out.println("\nACCESS LOG\n");
         log.printAll();
     
 

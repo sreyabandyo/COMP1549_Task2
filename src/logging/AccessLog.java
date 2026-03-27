@@ -8,11 +8,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-//
-
+//Records access attemptd
 public class AccessLog {
 
-    private final List<LogEntry> entries = new ArrayList<>();
+    private final List<LogEntry> entries = new ArrayList<>(); //Keeps all entry logs 
 
     // 
     public void log(String userId, Role role, Resource resource,
