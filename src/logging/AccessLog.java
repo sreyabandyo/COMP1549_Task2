@@ -13,7 +13,6 @@ public class AccessLog {
 
     private final List<LogEntry> entries = new ArrayList<>(); //Keeps all entry logs 
 
-    // 
     public void log(String userId, Role role, Resource resource,
                     String operation, boolean allowed) {
 
